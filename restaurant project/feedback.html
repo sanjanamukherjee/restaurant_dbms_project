@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+   
+
+   
+    <link href="css2/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link href="css2/1-col-portfolio.css" rel="stylesheet">
+
+    
+</head>
+<style>
+ body{
+    background: url('./img/allback.jpg') no-repeat;
+    margin-top: 7%;
+ }
+ h1 {font-style:italic; font-family: cursive;} 
+ 
+ textarea{width: 500px; height: 200px}
+
+</style>
+
+<body>
+
+   
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+         
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    
+                </button>
+                
+            </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  
+                <ul class="nav navbar-nav">
+                   
+                    <li>
+                        <a href="customer.php">WELCOME</a>
+                    </li>
+                    <li>
+                        <a href="orders.html">ORDERS</a>
+                    </li>
+                    <li>
+                        <a href="myorders.php">YOUR ORDER</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">FEEDBACK</a>
+                    </li>
+                    <li>
+                        <a href="logout.php">LOGOUT</a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+       
+    </nav>
+
+    <h1 align="center">YOUR FEEDBACK ON THE RESTAURANT</h1>
+    
+    <h4 align="center">We would like you to take a few moments to fill in the feedback</h4>
+
+    <br>
+
+    <form action="feedback.php" method="post">
+    <h2 style="float: left; margin-left: 15%;">HOW MUCH WOULD YOU LIKE TO RATE US?</h2>
+    <br>
+    <input list="rating" name="rating" style="display: inline; margin-left: 2%;margin-top: 0.25%;">
+    <datalist id="rating">
+        <option value=1>
+        <option value=2>
+        <option value=3>
+        <option value=4>
+        <option value=5>
+  </datalist>
+    <br>
+  <h2 style="float: left; margin-left: 15%;">YOUR FEEDBACK OR SUGGESTIONS:</h2>
+<br><br>
+    <textarea name="feedback" placeholder="type your feedback here" style="margin-left: "></textarea>
+    
+
+  <input type="submit" style="width: 15em; height: 2em; margin-left: 53%">
+    </form>
+
+
+</body>
+</html>
